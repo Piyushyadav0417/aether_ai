@@ -11,5 +11,6 @@ class AIResponse(BaseModel):
 
 # All Ai Provider Parent Class    
 class AIProvider(ABC):
+    @abstractmethod
     async def get_response(self, request: AIRequest) -> AIResponse:
         pass #openAI response logic here
