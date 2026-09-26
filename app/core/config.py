@@ -6,6 +6,7 @@ class Settings(BaseSettings):
         env_file=".env"
     )
     OPENAI_API_KEY: str
+    OPENAI_MODEL: str
     
 
 @lru_cache
